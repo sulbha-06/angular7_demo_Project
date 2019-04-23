@@ -1,0 +1,28 @@
+    
+    <div>
+		<h1 class="header1">Login OR Sign Up</h1>
+		</div>
+    
+    <div class="loginDiv">
+			<div class="user_main">
+				<div class="">
+			<label>	User Name</label>
+				<input type="text" placeholder="Username" [(ngModel)]="uname"/> 
+				</div>
+        
+        <div class="">
+          <label class="label1">Password</label>
+          <input type="password" placeholder="Password" [(ngModel)]="pwrd"/>
+          </div>
+          <div *ngIf="successFlag">
+						<p class="text-danger">Bad credential!</p>
+					</div>
+          <p class="text-primary">Existing User</p>
+				<button class="login_btn" (click)="loginCheck()"> Login</button>
+				<p class="text-info">New User?</p>
+        <button class="login_btn" routerLink="/register"> Register</button>
+				
+
+			</div>
+		</div>
+	
