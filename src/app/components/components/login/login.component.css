@@ -1,3 +1,4 @@
+
 .header1{
     
     width: 100%;
@@ -6,8 +7,9 @@
     text-align:center;
     margin-top:0px;
     }
+   
     .loginDiv{
-        background-color:pink;
+        background-color:#05386B;
         width: 442px;
         height:400px;
         position:absolute;
@@ -31,7 +33,9 @@
     }
     input{
         border-radius:5px;
-         text-shadow: 2px 2px 2px orange;
+         /*text-shadow: 2px 2px 2px orange;*/
+         text-align: center;
+         color: black;
         
     }
     .footer{
@@ -74,3 +78,24 @@
         border:none;
         padding:2px 5px;
     }
+    .login{
+       
+        position: absolute;
+        width: 39%;
+        height: 100%;
+        margin-left: 30%;
+    }
+    .loginBody{
+        margin: 10% 0%;
+    }
+    .row_margin{
+        margin-bottom: 1%;
+    }
+    ::placeholder {
+        color:burlywood;
+        opacity: 1; /* Firefox */
+      }
+
+      .alignment{
+        text-align: center;
+      }

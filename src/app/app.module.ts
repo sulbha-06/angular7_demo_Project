@@ -10,13 +10,12 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HelpComponent } from './components/components/help/help.component';
 import { ContactComponent } from './components/components/contact/contact.component';
 import { LoginComponent } from './components/components/login/login.component';
-import { ArticlesComponent } from './components/components/articles/articles.component';
-import { ChildArticleComponent } from './components/components/articles/child-article/child-article.component';
-import { ChangeTextDirective } from './components/components/change-text.directive';
-import { RegisterComponent } from './components/components/register/register.component';
-import { RegisterModelFormComponent } from './components/register-model-form/register-model-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProfileEditorComponent } from './components/profile-editor/profile-editor.component';
+import { HighlightDirective } from './highlight.directive';
+import {ButtonComponent} from './commonComponents/button/button.component'
+import { FooterPrimaryComponent } from './commonComponents/footerPrimary/footerPrimary.component';
+
+
 
 
 
@@ -31,12 +30,8 @@ import { ProfileEditorComponent } from './components/profile-editor/profile-edit
     HelpComponent,
     ContactComponent,
     LoginComponent,
-    ArticlesComponent,
-    ChildArticleComponent,
-    ChangeTextDirective,
-    RegisterComponent,
-    RegisterModelFormComponent,
-    ProfileEditorComponent
+    HighlightDirective,
+    FooterPrimaryComponent
   ],
   imports: [
     BrowserModule,

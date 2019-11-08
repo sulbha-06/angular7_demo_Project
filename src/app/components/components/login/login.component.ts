@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -8,26 +9,27 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  model: any = {};
+
+  public obs = new Observable(); //creating observable
   public  uname:String = '';
   public  pwrd:String = '';
   public  successFlag:boolean = false;
-  // router: Router;
   constructor(private router: Router) { }
 
   ngOnInit() {
-    console.log("user name is :"+this.uname);
+    //console.log("user name is :"+this.uname);
   }
 
   loginCheck(){
-    console.log("loginCheck user name is :"+this.uname);
-    console.log("loginCheck user name is :"+this.pwrd);
     if(this.uname === "sulbha" && this.pwrd === "1234"){
-       this.router.navigate(['/article']);
+      console.log("loginCheck user name isdsdsdsddsds :"+this.uname);
+       this.router.navigate(['/home']);
     }else{
-      this.successFlag =true;
       this.uname = '';
-      this.pwrd = '';
-   // this.router.navigate(['/home']);
+      this.pwrd = ''; 
+      this.successFlag =true;
+     
     }
   }
 
